@@ -1,0 +1,128 @@
+android-platform-external-libselinux (10.0.0+r36-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version
+  * Standards-Version: 4.5.0
+
+ -- Manas Kashyap <manaskashyaptech@gmail.com>  Thu, 21 May 2020 19:58:39 +0530
+
+android-platform-external-libselinux (8.1.0+r23-4) unstable; urgency=medium
+
+  * Team upload.
+  * debian/patches: Replace my patch with the one from BTS to fix FTBFS.
+    (Closes: #952415)
+  * debian/.gitlab-ci.yml: Update to perform CI only on master branch.
+
+ -- Roger Shimizu <rosh@debian.org>  Tue, 12 May 2020 01:55:05 +0900
+
+android-platform-external-libselinux (8.1.0+r23-3) unstable; urgency=medium
+
+  * Team upload.
+  * debian/watch: Update rule to get new upstream version.
+  * debian/control: Add Rules-Requires-Root: no
+  * debian/rules: Add more security hardening.
+  * debian/patches: Add patch fix FTBFS
+
+ -- Roger Shimizu <rosh@debian.org>  Mon, 11 May 2020 01:26:48 +0900
+
+android-platform-external-libselinux (8.1.0+r23-2) unstable; urgency=medium
+
+  * Release to unstable
+  * Install README.android to /usr/share/doc
+
+ -- Kai-Chung Yan <seamlikok@gmail.com>  Wed, 17 Oct 2018 18:19:35 +0800
+
+android-platform-external-libselinux (8.1.0+r23-1) experimental; urgency=medium
+
+  * Install READMEs to the main packages rather than the dev ones
+
+  [ Saif Abdul Cassim ]
+  * Track new upstream platform/external/selinux in AOSP
+  * Switch to Salsa Vcs
+
+  [ Chandramouli Rajagopalan ]
+  * Add myself to Uploaders
+  * Track new upstream platform/external/selinux in AOSP
+
+  [ Umang Parmar ]
+  * Add myself to Uploaders
+  * Build libsepol and libsepol-dev binary packages
+  * Use 'debian/clean' to simplify the build scripts
+  * Fix FTCBFS (thanks to Helmut Grohne) (Closes: #864563)
+
+  [ Hans-Christoph Steiner ]
+  * New Upstream release
+  * d/rules: Remove get-orig-source
+
+ -- Kai-Chung Yan <seamlikok@gmail.com>  Mon, 18 Jun 2018 22:49:36 +0800
+
+android-platform-external-libselinux (7.0.0+r1-2) unstable; urgency=medium
+
+  * Upload to unstable
+  * Update to debhelper 10
+  * d/control: Unify the maintainer name to "Android Tools Maintainers"
+
+ -- Kai-Chung Yan <seamlikok@gmail.com>  Tue, 06 Dec 2016 16:56:35 +0800
+
+android-platform-external-libselinux (7.0.0+r1-1) experimental; urgency=medium
+
+  * New upstream release
+  * Define NDEBUG for C binaries
+
+ -- Kai-Chung Yan <seamlikok@gmail.com>  Mon, 05 Sep 2016 18:44:31 +0800
+
+android-platform-external-libselinux (6.0.1+r55-1) unstable; urgency=medium
+
+  [ Chirayu Desai ]
+  * New upstream release. (Identical to 6.0.1+r16)
+  * debian: Add watch file for usage with uscan
+
+  [ Kai-Chung Yan ]
+  * d/rules:  No need to enable all hardening features, pie + bindnow will be
+    default in Stretch
+
+ -- Kai-Chung Yan <seamlikok@gmail.com>  Sun, 31 Jul 2016 15:16:51 +0800
+
+android-platform-external-libselinux (6.0.1+r16-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Kai-Chung Yan ]
+  * Install libraries to DEB_HOST_MULTIARCH path
+  * Update Standards-Version to 3.9.8 (no changes)
+  * d/rules: export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+ -- Markus Koschany <apo@debian.org>  Thu, 02 Jun 2016 12:29:11 +0200
+
+android-platform-external-libselinux (6.0.1+r16-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Kai-Chung Yan <seamlikok@gmail.com>  Tue, 16 Feb 2016 13:35:31 +0800
+
+android-platform-external-libselinux (6.0.0+r26-3) unstable; urgency=medium
+
+  * upload to unstable
+
+ -- Hans-Christoph Steiner <hans@eds.org>  Sun, 07 Feb 2016 21:51:38 +0100
+
+android-platform-external-libselinux (6.0.0+r26-2) experimental; urgency=medium
+
+  * Add version 0 to SONAME
+  * Install docs for libselinux
+
+ -- Kai-Chung Yan <seamlikok@gmail.com>  Tue, 17 Nov 2015 21:51:31 +0800
+
+android-platform-external-libselinux (6.0.0+r26-1) experimental; urgency=low
+
+  * New upstream release
+  * Remove version info from the library
+
+ -- Kai-Chung Yan <seamlikok@gmail.com>  Thu, 12 Nov 2015 11:46:33 +0800
+
+android-platform-external-libselinux (5.1.1+r8-1) unstable; urgency=low
+
+  [ Kai-Chung Yan ]
+  * Initial release (Closes: #793611)
+
+ -- Hans-Christoph Steiner <hans@eds.org>  Wed, 19 Aug 2015 13:35:27 +0200
