@@ -1,3 +1,10 @@
+android-platform-external-libselinux (10.0.0+r36-2) unstable; urgency=medium
+
+  [ Manas Kashyap ]
+  * UNRELEASED
+
+ -- Deepin Packages Builder <packages@deepin.org>  Wed, 21 Dec 2022 16:57:49 +0800
+
 android-platform-external-libselinux (10.0.0+r36-1) unstable; urgency=medium
 
   * Team upload
